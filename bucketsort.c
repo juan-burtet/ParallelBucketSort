@@ -20,7 +20,7 @@
 typedef struct{
 	int *array;
 	size_t size;
-}ArrayStruct;
+}Bucket;
 
 
 /** Função que faz o bucket sort utilizando openmp
@@ -31,12 +31,17 @@ typedef struct{
 	* @return vetor ordenado
 	*/
 int *bucket_sort_openmp(int *array, size_t size, int max_value, int n_threads){
-	ArrayStruct *n_array = NULL;
+	Bucket *buckets = NULL;
 	int *sort_array = NULL;
 
 	// aloca os vetores para serem ordenados
-	n_array = allocate_arrays(n_threads);
+	buckets = allocate_buckets(n_threads);
 
+	// Adicionar os valores aos baldes
+	for(size_t i = 0; i < size, i++){
+		size_t index = buckets[get_bucket_index(array[i],max_value,n_threads)]
+		buckets[index] = add_bucket_value(buckets[index], array[i])
+	}
 
 	// retorna o vetor ordenado
 	return sort_array;
@@ -46,10 +51,10 @@ int *bucket_sort_openmp(int *array, size_t size, int max_value, int n_threads){
 	*	@param n_arrays - Quantidade de arrays a serem retornados
 	* @return n vetores
 	*/
-ArrayStruct *allocate_arrays(int n_arrays){
-	ArrayStruct *arrays;
+Bucket *allocate_buckets(int n_arrays){
+	Bucket *arrays;
 
-	arrays = (ArrayStruct *) malloc(n_arrays * sizeof(ArrayStruct));
+	arrays = (Bucket *) malloc(n_arrays * sizeof(Bucket));
 	for(int i = 0; i < n_arrays; i++){
 		arrays[i].array = NULL;
 		arrays[i].size = 0;
@@ -64,6 +69,18 @@ ArrayStruct *allocate_arrays(int n_arrays){
 	* @param n_buckets - quantidade de baldes
 	* @return indice de qual vetor
 	*/
-int get_bucket(int value, int max, int n_buckets){
+int get_bucket_index(int value, int max, int n_buckets){
 	return (int) (value)/(max/n_buckets);
 }//get_bucket
+
+/** Função que adiciona um valor ao bucket
+	* @param array - Balde
+	* @param value - valor adicionado ao balde
+	* @return Balde com o valor inserido
+	*/
+Bucket *add_bucket_value(Bucket *array, int value){
+	array->array = realloc(array->array, array->size + 1);
+	array->array[array->size] = value;
+	array->size++;
+	return array;
+}//add_bucket_value
