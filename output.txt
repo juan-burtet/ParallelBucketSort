@@ -1,0 +1,136 @@
+----------- TESTES OPENMP ------------
+--------------------------------------
+| Vetor de tamanho 1000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 0.002507
+| | | | Balde 0 com tamanho 1000
+| | | utilizando 2 thread(s): 0.001473
+| | | | Balde 0 com tamanho 460
+| | | | Balde 1 com tamanho 540
+| | | utilizando 4 thread(s): 0.000957
+| | | | Balde 0 com tamanho 233
+| | | | Balde 1 com tamanho 227
+| | | | Balde 2 com tamanho 270
+| | | | Balde 3 com tamanho 270
+| | | utilizando 8 thread(s): 0.000797
+| | | | Balde 0 com tamanho 100
+| | | | Balde 1 com tamanho 133
+| | | | Balde 2 com tamanho 113
+| | | | Balde 3 com tamanho 114
+| | | | Balde 4 com tamanho 140
+| | | | Balde 5 com tamanho 130
+| | | | Balde 6 com tamanho 125
+| | | | Balde 7 com tamanho 145
+|
+| Vetor de tamanho 10000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 0.276220
+| | | | Balde 0 com tamanho 10000
+| | | utilizando 2 thread(s): 0.087181
+| | | | Balde 0 com tamanho 5034
+| | | | Balde 1 com tamanho 4966
+| | | utilizando 4 thread(s): 0.027309
+| | | | Balde 0 com tamanho 2527
+| | | | Balde 1 com tamanho 2507
+| | | | Balde 2 com tamanho 2449
+| | | | Balde 3 com tamanho 2517
+| | | utilizando 8 thread(s): 0.016111
+| | | | Balde 0 com tamanho 1236
+| | | | Balde 1 com tamanho 1291
+| | | | Balde 2 com tamanho 1265
+| | | | Balde 3 com tamanho 1242
+| | | | Balde 4 com tamanho 1225
+| | | | Balde 5 com tamanho 1224
+| | | | Balde 6 com tamanho 1294
+| | | | Balde 7 com tamanho 1223
+|
+| Vetor de tamanho 20000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 1.089479
+| | | | Balde 0 com tamanho 20000
+| | | utilizando 2 thread(s): 0.320982
+| | | | Balde 0 com tamanho 10055
+| | | | Balde 1 com tamanho 9945
+| | | utilizando 4 thread(s): 0.091211
+| | | | Balde 0 com tamanho 5068
+| | | | Balde 1 com tamanho 4987
+| | | | Balde 2 com tamanho 5029
+| | | | Balde 3 com tamanho 4916
+| | | utilizando 8 thread(s): 0.054764
+| | | | Balde 0 com tamanho 2534
+| | | | Balde 1 com tamanho 2534
+| | | | Balde 2 com tamanho 2509
+| | | | Balde 3 com tamanho 2478
+| | | | Balde 4 com tamanho 2567
+| | | | Balde 5 com tamanho 2462
+| | | | Balde 6 com tamanho 2451
+| | | | Balde 7 com tamanho 2465
+|
+---------- TESTES PTHREADS -----------
+--------------------------------------
+| Vetor de tamanho 1000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 0.002423
+| | | | Balde 0 com tamanho 1000
+| | | utilizando 2 thread(s): 0.000840
+| | | | Balde 0 com tamanho 460
+| | | | Balde 1 com tamanho 540
+| | | utilizando 4 thread(s): 0.000475
+| | | | Balde 0 com tamanho 233
+| | | | Balde 1 com tamanho 227
+| | | | Balde 2 com tamanho 270
+| | | | Balde 3 com tamanho 270
+| | | utilizando 8 thread(s): 0.000658
+| | | | Balde 0 com tamanho 100
+| | | | Balde 1 com tamanho 133
+| | | | Balde 2 com tamanho 113
+| | | | Balde 3 com tamanho 114
+| | | | Balde 4 com tamanho 140
+| | | | Balde 5 com tamanho 130
+| | | | Balde 6 com tamanho 125
+| | | | Balde 7 com tamanho 145
+|
+| Vetor de tamanho 10000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 0.259986
+| | | | Balde 0 com tamanho 10000
+| | | utilizando 2 thread(s): 0.061345
+| | | | Balde 0 com tamanho 5034
+| | | | Balde 1 com tamanho 4966
+| | | utilizando 4 thread(s): 0.015234
+| | | | Balde 0 com tamanho 2527
+| | | | Balde 1 com tamanho 2507
+| | | | Balde 2 com tamanho 2449
+| | | | Balde 3 com tamanho 2517
+| | | utilizando 8 thread(s): 0.008425
+| | | | Balde 0 com tamanho 1236
+| | | | Balde 1 com tamanho 1291
+| | | | Balde 2 com tamanho 1265
+| | | | Balde 3 com tamanho 1242
+| | | | Balde 4 com tamanho 1225
+| | | | Balde 5 com tamanho 1224
+| | | | Balde 6 com tamanho 1294
+| | | | Balde 7 com tamanho 1223
+|
+| Vetor de tamanho 20000:
+| | Tempo para ordenação:
+| | | utilizando 1 thread(s): 1.159037
+| | | | Balde 0 com tamanho 20000
+| | | utilizando 2 thread(s): 0.286732
+| | | | Balde 0 com tamanho 10055
+| | | | Balde 1 com tamanho 9945
+| | | utilizando 4 thread(s): 0.067732
+| | | | Balde 0 com tamanho 5068
+| | | | Balde 1 com tamanho 4987
+| | | | Balde 2 com tamanho 5029
+| | | | Balde 3 com tamanho 4916
+| | | utilizando 8 thread(s): 0.030013
+| | | | Balde 0 com tamanho 2534
+| | | | Balde 1 com tamanho 2534
+| | | | Balde 2 com tamanho 2509
+| | | | Balde 3 com tamanho 2478
+| | | | Balde 4 com tamanho 2567
+| | | | Balde 5 com tamanho 2462
+| | | | Balde 6 com tamanho 2451
+| | | | Balde 7 com tamanho 2465
+|
