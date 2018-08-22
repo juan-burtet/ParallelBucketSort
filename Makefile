@@ -1,6 +1,6 @@
 CC=gcc
 
-CFLAGS=-Wall -Wextra -Werror -fopenmp -pthread
+CFLAGS=-Wall -Wextra -Werror -fopenmp -pthread -std=c99 -O0 -g
 
 all: teste
 
