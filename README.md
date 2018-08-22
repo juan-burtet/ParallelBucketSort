@@ -2,7 +2,7 @@
 
 ## Detalhes
 
-  Foi considerado Vetores de 3 Tamanhos:
+  - Foi considerado Vetores de 3 Tamanhos:
     - __1.000__
     - __10.000__
     - __20.000__
@@ -10,6 +10,8 @@
   - Maior valor do vetor é definido por __RAND_MAX__
   - Desenvolver com _Pthreads_ e _OpenMP_
   - Executado com 1, 2, 4 e 8 threads
+
+## Resultados
 
 ### Testes utilizando _OpenMP_
 
